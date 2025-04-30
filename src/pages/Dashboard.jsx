@@ -26,7 +26,7 @@ const Dashboard = () => {
       try {
         const start = Date.now(); // Record start time
   
-        const response = await axios.get(import.meta.env.VITE_API_URL+'expenses');
+        const response = await axios.get(import.meta.env.VITE_API_URL+'expenses/');
   
         const timeElapsed = Date.now() - start;
         const delay = Math.max(1000 - timeElapsed, 0); // Ensure minimum 1 second
